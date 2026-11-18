@@ -42,8 +42,8 @@ BIOL 5340 (Fall 2026) final project, by Allan Thiyagaseelan and Habib Wouleo Fip
 
 **Google Colab (recommended):** upload `DE_Benchmark_Colab.ipynb`, then Runtime → Run all.
 
-- `QUICK_MODE = True`: 5 draws per sample size, about 15–20 min.
-- `QUICK_MODE = False`: 20 draws, the setting used for the report, about 1–1.5 h.
+- `QUICK_MODE = True`: 5 draws per sample size
+- `QUICK_MODE = False`: 20 draws, the setting used for the report
 
 Progress is saved after every draw, so a disconnected session resumes where it stopped. When the run finishes, download `results.zip`.
 
