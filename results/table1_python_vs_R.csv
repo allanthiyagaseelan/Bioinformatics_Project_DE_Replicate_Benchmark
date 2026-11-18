@@ -1,0 +1,4 @@
+Python tool,R tool,Python DE,R DE,Shared,Jaccard,Spearman log2FC
+PyDESeq2,deseq2,5129,5152,5094,0.982,0.9948
+edgeR,edgeR,5158,5127,5098,0.983,0.9996
+limma,limma,5162,5223,5073,0.955,0.9855

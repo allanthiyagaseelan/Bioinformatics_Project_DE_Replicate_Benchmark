@@ -1,0 +1,5 @@
+,Min replicates for 50% recall,Min replicates for 80% recall
+PyDESeq2,6,20
+edgeR,6,20
+limma,6,20
+Wilcoxon,8,20
