@@ -16,17 +16,17 @@ Debugging: Claude helped fix errors, including InMoose function issues, the sign
 
 ## How AI output was verified
 
-0. **Against an independent implementation.** The TMM normalization we implemented was checked against the `conorm` package on the full data and on pilot subsets of 3, 6 and 20 replicates (max difference 0.04%). This check is built into the notebook as a validation gate that must pass before the benchmark runs.
+1. **Against an independent implementation.** The TMM normalization we implemented was checked against the `conorm` package on the full data and on pilot subsets of 3, 6 and 20 replicates (max difference 0.04%). This check is built into the notebook as a validation gate that must pass before the benchmark runs.
 
-1. **Against published results.** On the full data, the Python tools agree closely with the original R results (Jaccard 0.95–0.98, Spearman ρ of log2 fold changes 0.986–1.000). This shows the code reproduces the established methods.
+2. **Against published results.** On the full data, the Python tools agree closely with the original R results (Jaccard 0.95–0.98, Spearman ρ of log2 fold changes 0.986–1.000). This shows the code reproduces the established methods.
 
-2. **Against the paper's findings.** Recall with 3 replicates (30–34% for PyDESeq2, edgeR and limma) is consistent with the 20–40% reported by Schurch et al. (2016).
+3. **Against the paper's findings.** Recall with 3 replicates (30–34% for PyDESeq2, edgeR and limma) is consistent with the 20–40% reported by Schurch et al. (2016).
 
-3. **Against theory.** With 3 vs 3 samples, the Wilcoxon test cannot reach a two-sided p-value below 0.1, so finding zero genes is the expected result, not a bug.
+4. **Against theory.** With 3 vs 3 samples, the Wilcoxon test cannot reach a two-sided p-value below 0.1, so finding zero genes is the expected result, not a bug.
 
-4. **Sanity checks.** Library sizes, the gene count after filtering (6,887), and the sample counts (42 WT, 44 Snf2) match the dataset documentation.
+5. **Sanity checks.** Library sizes, the gene count after filtering (6,887), and the sample counts (42 WT, 44 Snf2) match the dataset documentation.
 
-5. **Reproducibility.** Fixed per-draw seeds. Running the notebook from scratch produces identical tables.
+6. **Reproducibility.** Fixed per-draw seeds. Running the notebook from scratch produces identical tables.
 
 ## Ethics and data privacy
 
