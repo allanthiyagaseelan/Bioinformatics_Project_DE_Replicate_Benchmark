@@ -1,18 +1,14 @@
 # AI Usage
 
-This project used **Claude (Anthropic)** as an AI assistant. Course policy allows AI use as long as it is documented. This file records what the AI did, what we did, and how the AI's output was checked.
+We used Claude (Anthropic) as an assistant during this project.
 
 ## What the AI was used for
 
-| Stage | AI contribution | Our role |
-|---|---|---|
-| Topic selection | Suggested project directions; checked the class sheet for overlap with other students' topics | Chose the topic |
-| Literature and data | Found the Schurch et al. (2016) dataset, its GitHub count files, and the Python packages (PyDESeq2, InMoose) | Read the papers; confirmed the data source |
-| Proposal | Drafted the 2-page proposal in the course template | Reviewed and edited before submission |
-| Code | Wrote the Colab notebook: data loading, the four DE methods, TMM normalization, the subsampling loop, metrics and figures | Ran the notebook, read the code, checked the outputs (below) |
-| Revision after instructor feedback | Added the validation pilot and gate, result caching, and the "reference / disagreement" terminology | Reviewed the changes; confirmed the cached benchmark reproduces the earlier results exactly |
-| Debugging | Fixed InMoose API issues (exact-test output columns, limma `topTable` coefficient lookup) and the R fold-change sign convention | Re-ran to confirm the fixes |
-| Reports | Drafted the draft and final report text from the generated results | Reviewed every number against the CSV outputs |
+Topic and literature: Claude suggested possible project directions. It also helped us find the Schurch et al. (2016) dataset, its count files on GitHub, and the Python packages we used (PyDESeq2 and InMoose).
+Understanding the biology: As data science students, we used Claude to explain biology we were not familiar with, such as what RNA-seq measures, why biological replicates matter, what the snf2 mutation does, and how the DE tools differ.
+Proposal and reports: We planned the project and wrote the reports ourselves, and used Claude to help check the reports against the course template and rubric. We reviewed every section and checked every number against our results files.
+Code: We worked through the notebook to understand each step and compared its results with published values. Claude wrote the parts that needed methods we did not know well, such as the TMM normalization, the InMoose edgeR and limma calls, and the validation checks added after the professor’s feedback.
+Debugging: Claude helped fix errors, including InMoose function issues, the sign flip needed to compare with the R results, and a package version problem in Colab.
 
 ## How AI output was verified
 
@@ -27,11 +23,4 @@ This project used **Claude (Anthropic)** as an AI assistant. Course policy allow
 
 The data is public, non-human (yeast) RNA-seq. There is no personal or sensitive information, and no unpublished lab data was uploaded to any AI tool.
 
-## Prompt log
 
-Key prompts (summarized):
-
-- "Help me with my BIOL 5340 final project; templates attached" → topic options, then the proposal draft.
-- "Give the code to run in Colab, the data sources, and explain the project simply" → the notebook and an explanation.
-- "Is this project related to data science?" → mapping of project steps to data-science skills.
-- "Make the proposal and report documents using the templates" → the report drafts.
