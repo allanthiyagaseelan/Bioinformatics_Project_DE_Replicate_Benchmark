@@ -15,7 +15,7 @@ BIOL 5340 (Fall 2026) final project, by Allan Thiyagaseelan and Habib Wouleo Fip
 | `DE_Benchmark_Colab.ipynb` | The complete analysis in three stages: (1) validation pilot (must pass before anything else runs), (2) cached subsampling benchmark, (3) evaluation figures and tables |
 | `results/` | Output written by the notebook (CSV tables and PNG figures, listed below) |
 | `cache/` | Created when the notebook runs: the raw DE results of every random draw (one `.csv.gz` per draw), reused instead of recomputed. Not committed (about 30 MB). |
-| `reports/` | Proposal, draft report and final report |
+| `reports/` | Proposal and draft report |
 | `ai_usage.md` | How AI tools were used and how their output was checked |
 
 ### Files in `results/`
